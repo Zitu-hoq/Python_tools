@@ -12,7 +12,7 @@ def playlist_download():
     for video in p.videos:
         print(f'[{i}]Downloading :{video.title}')
         yt=YouTube(url=video.watch_url,on_progress_callback=on_progress)
-        yt.streams.get_by_resolution('720p').download()
+        yt.streams.get_by_resolution('720p').download() //change this line of code such as '720p' to '1080p' for video resolution.
         print('')
         print(f'\t\t\t[+][+][+]  Downloaded: {video.title}  [+][+][+]\n')
         i=i+1
@@ -26,7 +26,7 @@ def video_download():
     yt=YouTube(url=video_link,on_progress_callback=on_progress)
     print(gap)
     print(f'[+]Downloading : {yt.title}')
-    yt.streams.get_by_resolution('720p').download()
+    yt.streams.get_by_resolution('720p').download() //change this line of code such as '720p' to '1080p' for video resolution.
     print('')
     print(f'\t\t\t[+][+][+]  Successfully Downloaded the video  [+][+][+]\n\n')
     print(gap)
