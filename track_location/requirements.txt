@@ -1,0 +1,4 @@
+folium==0.18.0
+opencage==3.0.3
+phonenumbers==8.13.50
+python-dotenv==1.0.1
